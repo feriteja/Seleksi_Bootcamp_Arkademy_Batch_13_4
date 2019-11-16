@@ -35,5 +35,19 @@ function biodata(name, age) {
   ];
   let interest_in_coding = true;
 
-  return JSON.stringify(biodata());
+  let merge = {
+    name,
+    age,
+    address,
+    hobbies,
+    is_married,
+    list_school,
+    skills,
+    interest_in_coding
+  };
+
+  let myJSON = JSON.stringify(merge);
+  return myJSON;
 }
+
+console.log(biodata(name, age));
